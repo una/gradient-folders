@@ -40,16 +40,15 @@ h1 {
   letter-spacing: 0.025em;
 }
 
-.subtitle-container {
-  display: flex;
-  justify-content: center;
-}
-
 h2 {
-  padding: .25em .5em;
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--h2-color);
   font-size: 1.4em;
-  background: linear-gradient(to right, var(--grad-color1), var(--grad-color2));
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: var(--grad-color1);
+  text-decoration-style: wavy;
 }
 
 h3 {
@@ -105,7 +104,7 @@ h3 {
 
     &::before {
       animation: rainbow 2s infinite linear;
-      transform: translateX(-.5em) translateY(-.1em);
+      transform: translateX(-.5em) translateY(.1em);
     }
   }
 }
