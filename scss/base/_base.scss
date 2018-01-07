@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Maven+Pro:900|Maven+Pro:400');
+
+:root {
+  --bg-color: #fff5fd;
+  --squiggle-color: #ffeafc;
+  --grad-color1: #a4a4d6;
+  --grad-color2: #ff6fa4;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +18,23 @@ html, body {
 
 .main {
   display: flex;
-  // @media (max-width: $breakpoint--mobile) {
-  //   flex-direction: column;
-  // }
+  max-width: 1600px;
+}
+
+img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 10vw;
 }
