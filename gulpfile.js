@@ -94,11 +94,11 @@ gulp.task('watch', function() {
   gulp.watch('scss/**/*.scss', ['scss']);
   gulp.watch('js/*.js', ['jshint', 'js']);
   gulp.watch('./*.html', ['minify-html']);
-  gulp.watch('img/*', ['imgmin']);
+  gulp.watch(['img/*', 'downloads/*'], ['imgmin']);
 });
 
 gulp.task('imgmin', function () {
-    return gulp.src('img/*')
+    return gulp.src(['img/*', 'downloads/*'])
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],

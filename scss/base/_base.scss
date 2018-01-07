@@ -38,3 +38,12 @@ body {
   margin: 0 auto;
   padding: 1em 10vw;
 }
+
+@keyframes rainbow {
+  from {
+    filter: hue-rotate(0)
+  }
+  to {
+    filter: hue-rotate(360deg)
+  }
+}
