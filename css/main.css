@@ -121,7 +121,8 @@ footer {
   grid-gap: 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding: 1em 0; }
   h3:before, h3:after,
   footer:before,
   footer:after {
