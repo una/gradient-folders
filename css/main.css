@@ -67,8 +67,21 @@ h1, h2, h3 {
   font-family: 'Maven Pro', sans-serif; }
 
 p,
-a {
-  font-family: 'Anonymous Pro', monospace;
+a,
+ol,
+ul,
+li {
+  font-family: 'Anonymous Pro', monospace; }
+
+ol, ul {
+  margin: 2em;
+  margin: 0 auto;
+  font-size: 1.3em; }
+
+li + li {
+  margin-top: .5em; }
+
+p {
   font-size: 1.3em; }
 
 p {
@@ -92,12 +105,13 @@ h2 {
   text-align: center;
   text-decoration: underline;
   text-underline-position: under;
-  -webkit-text-decoration-color: var(--grad-color1);
-          text-decoration-color: var(--grad-color1);
+  -webkit-text-decoration-color: currentColor;
+          text-decoration-color: currentColor;
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy; }
 
-h3 {
+h3,
+footer {
   color: #676767;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -108,14 +122,18 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  h3:before, h3:after {
+  h3:before, h3:after,
+  footer:before,
+  footer:after {
     content: '';
     width: 100%;
     height: 2px;
     display: block; }
-  h3:after {
+  h3:after,
+  footer:after {
     background: linear-gradient(45deg, var(--grad-color1), var(--grad-color2)); }
-  h3:before {
+  h3:before,
+  footer:before {
     background: linear-gradient(45deg, var(--grad-color2), var(--grad-color1)); }
 
 .download-link {
@@ -123,7 +141,8 @@ h3 {
   display: block;
   position: relative;
   z-index: 1;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.3em; }
   .download-link::before {
     content: '';
     z-index: -1;
@@ -156,3 +175,6 @@ h3 {
 
 footer a {
   font-size: 1em; }
+
+footer {
+  text-transform: lowercase; }
