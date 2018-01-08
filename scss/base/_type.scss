@@ -20,8 +20,24 @@ h1, h2, h3 {
 }
 
 p,
-a {
+a,
+ol,
+ul,
+li  {
   font-family: 'Anonymous Pro', monospace;
+}
+
+ol, ul {
+  margin: 2em;
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+
+li + li {
+  margin-top: .5em;
+}
+
+p {
   font-size: 1.3em;
 }
 
@@ -47,11 +63,12 @@ h2 {
   text-align: center;
   text-decoration: underline;
   text-underline-position: under;
-  text-decoration-color: var(--grad-color1);
+  text-decoration-color: currentColor;
   text-decoration-style: wavy;
 }
 
-h3 {
+h3,
+footer {
   color: #676767;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -84,6 +101,7 @@ h3 {
   position: relative;
   z-index: 1;
   text-align: center;
+  font-size: 1.3em;
 
   &::before {
     content: '';
@@ -118,4 +136,8 @@ h3 {
 
 footer a {
   font-size: 1em;
+}
+
+footer {
+  text-transform: lowercase
 }
