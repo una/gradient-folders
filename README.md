@@ -6,9 +6,9 @@
 
 1. Download the icon set you want from [here](https://una.im/gradient-folders).
 * Unzip the icon set (this should make a folder. Icons are in .png format).
-* Open the icon you want to set your folder to and copy it ctrl + c
+* Open the icon you want to set your folder to and copy it cmd + c
 * Right-click on the folder you want to customize and select "Get Info".
-* Click on the icon to the left of the folder name in this view, and paste it ctrl + v
+* Click on the icon to the left of the folder name in this view, and paste it cmd + v
 * That's it!
 
 <p>There's more information in <a href="https://www.hongkiat.com/blog/customize-mac-folder-icon/">this article</a>.</p>
